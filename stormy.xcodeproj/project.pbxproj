@@ -14,6 +14,7 @@
 		6A6F36B2218CEE6F00FB9235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6F36B0218CEE6F00FB9235 /* LaunchScreen.storyboard */; };
 		6A6F36BD218CEE6F00FB9235 /* stormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F36BC218CEE6F00FB9235 /* stormyTests.swift */; };
 		6A6F36C8218CEE6F00FB9235 /* stormyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F36C7218CEE6F00FB9235 /* stormyUITests.swift */; };
+		6A6F36D6218CF30F00FB9235 /* Content in Resources */ = {isa = PBXBuildFile; fileRef = 6A6F36D5218CF30F00FB9235 /* Content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		6A6F36A4218CEE6E00FB9235 /* stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6F36A7218CEE6E00FB9235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A6F36A9218CEE6E00FB9235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A6F36A9218CEE6E00FB9235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		6A6F36AC218CEE6E00FB9235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A6F36AE218CEE6F00FB9235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A6F36B1218CEE6F00FB9235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		6A6F36C3218CEE6F00FB9235 /* stormyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stormyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6F36C7218CEE6F00FB9235 /* stormyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stormyUITests.swift; sourceTree = "<group>"; };
 		6A6F36C9218CEE6F00FB9235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A6F36D5218CF30F00FB9235 /* Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Content; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				6A6F36AE218CEE6F00FB9235 /* Assets.xcassets */,
 				6A6F36B0218CEE6F00FB9235 /* LaunchScreen.storyboard */,
 				6A6F36B3218CEE6F00FB9235 /* Info.plist */,
+				6A6F36D5218CF30F00FB9235 /* Content */,
 			);
 			path = stormy;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				6A6F36B2218CEE6F00FB9235 /* LaunchScreen.storyboard in Resources */,
 				6A6F36AF218CEE6F00FB9235 /* Assets.xcassets in Resources */,
+				6A6F36D6218CF30F00FB9235 /* Content in Resources */,
 				6A6F36AD218CEE6E00FB9235 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
