@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var pictures = [String]()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,11 +21,11 @@ class ViewController: UIViewController {
         for item in items {
             if item.hasPrefix("nssl")
             {
-                //bubu load
                 pictures.append(item)
+				
             }
         }
-        print("bububu")
+		print(pictures)
     }
 
     override func didReceiveMemoryWarning() {
