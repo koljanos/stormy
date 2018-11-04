@@ -20,7 +20,7 @@ class ViewController: UITableViewController {
         let items = try! fm.contentsOfDirectory(atPath: path)
         
         for item in items {
-            if item.hasPrefix("nssl")
+            if item.hasPrefix("mama")
             {
                 pictures.append(item)
 				

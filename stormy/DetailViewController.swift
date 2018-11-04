@@ -8,9 +8,10 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
     var selectedImage: String?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,8 @@ class DetailViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
         title = selectedImage
+        self.scrollView.minimumZoomScale = 1.0
+        self.scrollView.maximumZoomScale = 10.0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +39,9 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.imageView
+    }
 
     /*
     // MARK: - Navigation
