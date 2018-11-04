@@ -25,6 +25,16 @@
 		6A6F36E9218CFA2600FB9235 /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A6F36DF218CFA2600FB9235 /* nssl0034.jpg */; };
 		6A6F36EA218CFA2600FB9235 /* nssl0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A6F36E0218CFA2600FB9235 /* nssl0042.jpg */; };
 		6AAD083C218F65450098AB59 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAD083B218F65450098AB59 /* DetailViewController.swift */; };
+		6AC11043218F7B730087B13B /* mama1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC11039218F7B6D0087B13B /* mama1.jpg */; };
+		6AC11044218F7B730087B13B /* mama4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1103A218F7B6E0087B13B /* mama4.jpg */; };
+		6AC11045218F7B730087B13B /* mama3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1103B218F7B6E0087B13B /* mama3.jpg */; };
+		6AC11046218F7B730087B13B /* mama8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1103C218F7B6F0087B13B /* mama8.jpg */; };
+		6AC11047218F7B730087B13B /* mama7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1103D218F7B700087B13B /* mama7.jpg */; };
+		6AC11048218F7B730087B13B /* mama2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1103E218F7B710087B13B /* mama2.jpg */; };
+		6AC11049218F7B730087B13B /* mama6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1103F218F7B710087B13B /* mama6.jpg */; };
+		6AC1104A218F7B730087B13B /* mama5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC11040218F7B710087B13B /* mama5.jpg */; };
+		6AC1104B218F7B730087B13B /* mama9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC11041218F7B720087B13B /* mama9.jpg */; };
+		6AC1104C218F7B730087B13B /* mama10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC11042218F7B720087B13B /* mama10.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +79,16 @@
 		6A6F36DF218CFA2600FB9235 /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		6A6F36E0218CFA2600FB9235 /* nssl0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0042.jpg; sourceTree = "<group>"; };
 		6AAD083B218F65450098AB59 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6AC11039218F7B6D0087B13B /* mama1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama1.jpg; sourceTree = "<group>"; };
+		6AC1103A218F7B6E0087B13B /* mama4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama4.jpg; sourceTree = "<group>"; };
+		6AC1103B218F7B6E0087B13B /* mama3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama3.jpg; sourceTree = "<group>"; };
+		6AC1103C218F7B6F0087B13B /* mama8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama8.jpg; sourceTree = "<group>"; };
+		6AC1103D218F7B700087B13B /* mama7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama7.jpg; sourceTree = "<group>"; };
+		6AC1103E218F7B710087B13B /* mama2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama2.jpg; sourceTree = "<group>"; };
+		6AC1103F218F7B710087B13B /* mama6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama6.jpg; sourceTree = "<group>"; };
+		6AC11040218F7B710087B13B /* mama5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama5.jpg; sourceTree = "<group>"; };
+		6AC11041218F7B720087B13B /* mama9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama9.jpg; sourceTree = "<group>"; };
+		6AC11042218F7B720087B13B /* mama10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mama10.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +156,16 @@
 				6A6F36DD218CFA2600FB9235 /* nssl0049.jpg */,
 				6A6F36D8218CFA2500FB9235 /* nssl0051.jpg */,
 				6A6F36DA218CFA2500FB9235 /* nssl0091.jpg */,
+				6AC11039218F7B6D0087B13B /* mama1.jpg */,
+				6AC1103E218F7B710087B13B /* mama2.jpg */,
+				6AC1103B218F7B6E0087B13B /* mama3.jpg */,
+				6AC1103A218F7B6E0087B13B /* mama4.jpg */,
+				6AC11040218F7B710087B13B /* mama5.jpg */,
+				6AC1103F218F7B710087B13B /* mama6.jpg */,
+				6AC1103D218F7B700087B13B /* mama7.jpg */,
+				6AC1103C218F7B6F0087B13B /* mama8.jpg */,
+				6AC11041218F7B720087B13B /* mama9.jpg */,
+				6AC11042218F7B720087B13B /* mama10.jpg */,
 			);
 			path = stormy;
 			sourceTree = "<group>";
@@ -262,17 +292,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC11044218F7B730087B13B /* mama4.jpg in Resources */,
+				6AC11048218F7B730087B13B /* mama2.jpg in Resources */,
 				6A6F36EA218CFA2600FB9235 /* nssl0042.jpg in Resources */,
 				6A6F36E7218CFA2600FB9235 /* nssl0049.jpg in Resources */,
 				6A6F36E8218CFA2600FB9235 /* nssl0033.jpg in Resources */,
 				6A6F36E2218CFA2600FB9235 /* nssl0051.jpg in Resources */,
+				6AC1104C218F7B730087B13B /* mama10.jpg in Resources */,
+				6AC11049218F7B730087B13B /* mama6.jpg in Resources */,
 				6A6F36B2218CEE6F00FB9235 /* LaunchScreen.storyboard in Resources */,
 				6A6F36E5218CFA2600FB9235 /* nssl0043.jpg in Resources */,
+				6AC1104A218F7B730087B13B /* mama5.jpg in Resources */,
+				6AC11045218F7B730087B13B /* mama3.jpg in Resources */,
 				6A6F36E1218CFA2600FB9235 /* nssl0046.jpg in Resources */,
+				6AC11047218F7B730087B13B /* mama7.jpg in Resources */,
+				6AC11043218F7B730087B13B /* mama1.jpg in Resources */,
 				6A6F36E6218CFA2600FB9235 /* nssl0041.jpg in Resources */,
+				6AC11046218F7B730087B13B /* mama8.jpg in Resources */,
 				6A6F36AF218CEE6F00FB9235 /* Assets.xcassets in Resources */,
 				6A6F36E3218CFA2600FB9235 /* nssl0045.jpg in Resources */,
 				6A6F36E4218CFA2600FB9235 /* nssl0091.jpg in Resources */,
+				6AC1104B218F7B730087B13B /* mama9.jpg in Resources */,
 				6A6F36E9218CFA2600FB9235 /* nssl0034.jpg in Resources */,
 				6A6F36AD218CEE6E00FB9235 /* Main.storyboard in Resources */,
 			);
