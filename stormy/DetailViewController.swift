@@ -21,7 +21,7 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
         title = selectedImage
         self.scrollView.minimumZoomScale = 1.0
-        self.scrollView.maximumZoomScale = 10.0
+        self.scrollView.maximumZoomScale = 5.0
     }
     
     override func viewWillAppear(_ animated: Bool) {
