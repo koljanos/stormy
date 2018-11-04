@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,9 +48,39 @@
             </objects>
             <point key="canvasLocation" x="591.20000000000005" y="343.17841079460271"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="XIy-sE-kGd">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="8dI-g2-YLv" customClass="DetailViewController" customModule="stormy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Qb-ed-kaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gTk-E7-TyF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gTk-E7-TyF" firstAttribute="leading" secondItem="7Qb-ed-kaZ" secondAttribute="leading" id="0wD-kI-nYt"/>
+                            <constraint firstItem="gTk-E7-TyF" firstAttribute="bottom" secondItem="Zvn-7J-PqO" secondAttribute="bottom" id="Pgr-1f-J3I"/>
+                            <constraint firstItem="gTk-E7-TyF" firstAttribute="top" secondItem="Zvn-7J-PqO" secondAttribute="top" id="uq7-rV-IIO"/>
+                            <constraint firstAttribute="trailing" secondItem="gTk-E7-TyF" secondAttribute="trailing" id="x3N-jv-OA4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zvn-7J-PqO"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="gTk-E7-TyF" id="TRl-ql-n6j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBV-Dn-1nk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415.2" y="342.27886056971516"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="CVR-XK-Ie0">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rks-cl-9oW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QWR-WB-yAq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D8k-PY-Hqb">
@@ -61,7 +92,6 @@
                         <segue destination="Rkl-v8-vl8" kind="relationship" relationship="rootViewController" id="UhI-X3-3I9"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rks-cl-9oW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-348" y="343.17841079460271"/>
         </scene>
