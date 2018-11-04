@@ -99,7 +99,6 @@
 			children = (
 				6A6F36A6218CEE6E00FB9235 /* stormy */,
 				6A6F36BB218CEE6F00FB9235 /* stormyTests */,
-				6A6F36C6218CEE6F00FB9235 /* stormyUITests */,
 				6A6F36A5218CEE6E00FB9235 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +118,7 @@
 			children = (
 				6A6F36A7218CEE6E00FB9235 /* AppDelegate.swift */,
 				6A6F36A9218CEE6E00FB9235 /* ViewController.swift */,
+				6A6F36C6218CEE6F00FB9235 /* stormyUITests */,
 				6A6F36AB218CEE6E00FB9235 /* Main.storyboard */,
 				6A6F36AE218CEE6F00FB9235 /* Assets.xcassets */,
 				6A6F36B0218CEE6F00FB9235 /* LaunchScreen.storyboard */,
