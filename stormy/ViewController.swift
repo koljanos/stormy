@@ -28,9 +28,16 @@ class ViewController: UITableViewController, UISearchBarDelegate {
 		       pictures.append(item)
 				
             }
-        }
+		
 		print(pictures)
 		title = "Storm Viewer"
+		tableView.delegate = self
+		
+		tableView.dataSource = self
+		
+		searchBar.delegate = self
+		
+		searchBar.returnKeyType = UIReturnKeyType.done
 		
     }
 	
@@ -44,9 +51,11 @@ class ViewController: UITableViewController, UISearchBarDelegate {
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
 		let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
 		if inSearching{
-			
+		cell.textLabel?.text = filteredPictures[indexPath.row]
+		} else {
+			cell.textLabel?.text = pictures[indexPath.row]
 		}
-		cell.textLabel?.text = pictures[indexPath.row]
+		
 		return cell
 	}
 
@@ -64,20 +73,21 @@ class ViewController: UITableViewController, UISearchBarDelegate {
 			// 3: now push it onto the navigation controller
 			navigationController?.pushViewController(vc, animated: true)
 		}
-		func searchBar (_ searchBar: UISearchBar, textDidChange searchText:String){
-			
-			if searchBar.text == nil || searchBar.text == "" {
-				inSearching = false
-				view.endEditing(true)
-				tableView.reloadData()
-			} else {
-				inSearching = true
-				filteredPictures = pictures.filter({$0 == searchBar.text})
-				tableView.reloadData()
-			}
+		
+	}
+	func searchBar (_ searchBar: UISearchBar, textDidChange searchText:String){
+		
+		if searchBar.text == nil || searchBar.text == "" {
+			inSearching = false
+			view.endEditing(true)
+			tableView.reloadData()
+		} else {
+			inSearching = true
+			filteredPictures = pictures.filter({$0 == searchBar.text})
+			tableView.reloadData()
 		}
 	}
-
+	
 
 }
 
