@@ -25,9 +25,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         searchBar.delegate = self
 		searchBar.returnKeyType = UIReturnKeyType.done
         for item in items {
-            if item.hasPrefix("mama")
-            {
-                pictures.append(item)
+		       pictures.append(item)
 				
             }
         }
