@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UITableViewController, UISearchBarDelegate {
 	@IBOutlet weak var searchBar: UISearchBar!
 	var pictures = [String]()
-	var filteredPictures = [String]()
-	
+	var filteredPictures = [String()]
 	var inSearching = false
 	
     override func viewDidLoad() {
@@ -68,7 +68,11 @@ class ViewController: UITableViewController, UISearchBarDelegate {
 		// 1: try loading the "Detail" view controller and typecasting it to be DetailViewController
 		if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
 			// 2: success! Set its selectedImage property
-			vc.selectedImage = pictures[indexPath.row]
+			if !inSearching{
+				vc.selectedImage = pictures[indexPath.row]}
+			else {
+				vc.selectedImage = filteredPictures[indexPath.row]
+			}
 			
 			// 3: now push it onto the navigation controller
 			navigationController?.pushViewController(vc, animated: true)
@@ -83,10 +87,11 @@ class ViewController: UITableViewController, UISearchBarDelegate {
 			tableView.reloadData()
 		} else {
 			inSearching = true
-			filteredPictures = pictures.filter({$0 == searchBar.text})
+			filteredPictures = pictures.filter{$0.lowercased().contains(searchText.lowercased())}
+			}
 			tableView.reloadData()
 		}
-	}
+	
 	
 
 }
