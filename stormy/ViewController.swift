@@ -25,7 +25,8 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         searchBar.delegate = self
 		searchBar.returnKeyType = UIReturnKeyType.done
         for item in items {
-		       pictures.append(item)
+			if (item.hasSuffix(".png") || item.hasSuffix(".jpg")) && !(item.hasSuffix("~ipad.png")){
+				pictures.append(item)}
 				
             }
 		
@@ -52,8 +53,10 @@ class ViewController: UITableViewController, UISearchBarDelegate {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
 		if inSearching{
 		cell.textLabel?.text = filteredPictures[indexPath.row]
+			cell.imageView!.image = UIImage(named: filteredPictures[indexPath.row])
 		} else {
 			cell.textLabel?.text = pictures[indexPath.row]
+			cell.imageView!.image = UIImage(named: pictures[indexPath.row])
 		}
 		
 		return cell
