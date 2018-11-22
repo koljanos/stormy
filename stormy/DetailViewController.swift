@@ -10,7 +10,6 @@ import UIKit
 
 class DetailViewController: UIViewController, UIScrollViewDelegate, UISearchBarDelegate {
 
-   
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     var selectedImage: String?
@@ -26,31 +25,31 @@ class DetailViewController: UIViewController, UIScrollViewDelegate, UISearchBarD
         self.scrollView.maximumZoomScale = 5.0
         scrollView.clipsToBounds = true
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.hidesBarsOnTap = true
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
         navigationController?.setNavigationBarHidden(true, animated: true)
 
     }
-    
+
     func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
 
-        if scrollView.zoomScale == 1.0{navigationController?.setNavigationBarHidden(false, animated: true)}
-        
+        if scrollView.zoomScale == 1.0 {navigationController?.setNavigationBarHidden(false, animated: true)}
+
     }
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         if scrollView.isZoomBouncing {print("BOUNCE!")}
